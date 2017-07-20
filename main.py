@@ -4,11 +4,9 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
 	def get(self):
-		self.response.write("Hello test Message")
+		self.response.write("Hello test Message again")
 		
 		
 app=webapp2.WSGIApplication([
 	("/",MainHandler)
 ],debug=True)
-			
-	
